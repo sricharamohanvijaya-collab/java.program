@@ -1,0 +1,201 @@
+*if else statement*
+"""
+import java.util.Scanner;
+import java.io.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Username:");
+        String us=sc.nextLine();
+        System.out.println("Enter Password:");
+        String pw=sc.nextLine();
+        if (us=="Hemalakshmi" && pw=="password"){
+            System.out.println("User can login");
+        }
+        else{
+            System.out.println("Invalid User Credentials");
+        }
+    }
+}
+"""
+"""
+*User Credentials*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Username:");
+        String us=sc.nextLine();
+        System.out.println("Enter Password:");
+        int pw=sc.nextInt();
+        System.out.println(us);
+        System.out.println(pw);
+        if (!us.isEmpty() && pw > 0){
+            System.out.println("User can login");
+        }
+        else{
+            System.out.println("Invalid User Credentials");
+        }
+          sc.close();
+    }
+}
+"""
+*Grade System using else-if*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter marks:");
+        int m=sc.nextInt();
+        if (m>90 && m<=100){
+            System.out.println("A+");
+        }
+        else if(m<90 && m>=70){
+            System.out.println("B+");
+        }
+        else if(m<70 && m>=50){
+            System.out.println("C+");
+        }
+        else if(m<50){
+            System.out.println("Fail");
+        }
+        else{
+            System.out.println("Invalid Mark");
+        }
+          sc.close();
+    }
+"""
+*Nested if else*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter marks:");
+        int m=sc.nextInt();
+        if (m>=10){
+            if(m==10){
+              System.out.println("Mark is 10");  
+            }
+        }
+        
+        else{
+            System.out.println("Invalid Mark");
+        }
+          sc.close();
+    }
+}
+"""
+*Odd or Even*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number:");
+        int m=sc.nextInt();
+        if (m%2==0){
+              System.out.println(m+" is Even");  
+            }
+        else{
+            System.out.println(m+" is Odd");
+        }
+          sc.close();
+    }
+}
+"""
+*Positive/Negative/Zero*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number:");
+        int m=sc.nextInt();
+        if (m>0){
+              System.out.println(m+" is Positive");  
+            }
+        else if(m<0){
+            System.out.println(m+" is Negative");
+        }
+        else{
+            System.out.println(m+" is Zero");
+        }
+          sc.close();
+    }
+}
+"""
+*Greater number*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number:");
+        int m=sc.nextInt();
+        System.out.println("Enter number:");
+        int n=sc.nextInt();
+        if (m>n){
+              System.out.println(m+" is Greater");  
+            }
+        else if(m<n){
+            System.out.println(n+" is Greater");
+        }
+        else{
+            System.out.println("Both are Equal");
+        }
+          sc.close();
+    }
+}
+"""
+*Greater number(of 3)*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter number:");
+        int m=sc.nextInt();
+        System.out.println("Enter number:");
+        int n=sc.nextInt();
+        System.out.println("Enter number:");
+        int o=sc.nextInt();
+        if (m>=n && m>=o){
+              System.out.println(m+" is Greater");  
+            }
+        else if(m<=n && n>=o){
+            System.out.println(n+" is Greater");
+        }
+        else if (o>=m && o>=n){
+            System.out.println(o+" is Greater");
+        }
+        else{
+            System.out.println("Three are of same value");
+        }
+          sc.close();
+    }
+}
+"""
+*Vote age*
+import java.util.Scanner;
+import java.io.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter age:");
+        int m=sc.nextInt();
+        if (m>=18){
+              System.out.println("Right to vote");  
+            }
+        else if(m<18 && m>0){
+            System.out.println("Just Grow first");
+        }
+        else{
+            System.out.println("Invalid Age");
+        }
+          sc.close();
+    }
+}
+"""
