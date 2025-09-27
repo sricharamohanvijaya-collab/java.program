@@ -1,0 +1,260 @@
+"""
+*Student Info*
+class Student{
+    String name;
+    int rollno;
+    int marks;
+    void display(){
+        System.out.println("NAME: "+name);
+        System.out.println("Roll.no: "+rollno);
+        System.out.println("Marks: "+marks);
+    }
+    public static void main(String[] args){
+        Student s1=new Student();
+        s1.name="Hemalakshmi";
+        s1.rollno=31;
+        s1.marks=100;
+        s1.display();
+    }
+}
+"""
+*Bank Account*
+import java.util.Scanner;
+class BA{
+    String holderName;
+    int accno;
+    int balance;
+    void deposit(){
+        System.out.println("Enter the Amount to Deposit:");
+        Scanner sc=new Scanner(System.in);
+        int damt=sc.nextInt();
+        balance+=damt;
+        System.out.println("The amount is being Deposited....");
+        System.out.println("Rs."+damt+" is Deposited");
+    }
+    void withdraw(){
+        System.out.println("Enter the Amount to Withdraw:");
+        Scanner sc=new Scanner(System.in);
+        int wamt=sc.nextInt();
+        balance-=wamt;
+        System.out.println("The amount is being Withdraw....");
+        System.out.println("Rs."+wamt+" is Withdrawed");
+    }
+    void displayBalance(){
+        System.out.println("The Balance amount is: "+balance);
+    }
+    public static void main(String[] args){
+        BA acc1=new BA();
+        acc1.holderName="Hemalakshmi";
+        acc1.accno=31;
+        acc1.balance=0;
+        acc1.deposit();
+        acc1.withdraw();
+        acc1.displayBalance();
+    }
+}
+"""
+*Inheritance Vehicle*
+import java.util.Scanner;
+class Vehicle {
+    String Brand;
+    void start() {
+        System.out.println("The Vehicle Starts!!!");
+    }
+}
+class Car extends Vehicle {
+    String model;
+    void displayDetails() {
+        System.out.println("The Car is: " + model);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Vehicle bike = new Vehicle();
+        bike.start();
+        Car veh = new Car();
+        veh.model = "Fortuner"; 
+        veh.displayDetails();
+    }
+}
+"""
+*Employee Hierarchy*
+import java.util.Scanner;
+class Employee {
+    String Name;
+    long Salary;
+    void display() {
+        System.out.println("Name: " + Name + " Salary: " + Salary);
+    }
+}
+class Manager extends Employee {
+    String department;
+    void display() {
+        System.out.println("Name: " + Name + " Salary: " + Salary + " Department: " + department);
+    }
+}
+class Developer extends Employee {
+    String programmingLanguage;
+    void display() {
+        System.out.println("Name: " + Name + " Salary: " + Salary + " Programming Language: " + programmingLanguage);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.Name = "Hemalakshmi";
+        emp.Salary = 300000;
+        emp.display();
+        Manager mgr = new Manager();
+        mgr.Name = "MadhuShree";
+        mgr.Salary = 500000;
+        mgr.department = "IT";
+        mgr.display();
+        Developer dev = new Developer();
+        dev.Name = "Arangaprasath";
+        dev.Salary = 400000;
+        dev.programmingLanguage = "JAVA";
+        dev.display();
+    }
+}
+"""
+*Animal Hierarchy*
+import java.util.Scanner;
+class Animal {
+    void eat() {
+        System.out.println("Animal eats!!");
+    }
+}
+class Mammal extends Animal {
+    void walk() {
+        System.out.println("Mammal Walks");
+    }
+}
+class Dog extends Mammal {
+    void bark() {
+        System.out.println("Dog Barks");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Animal ani = new Animal();
+        ani.eat();
+        Mammal mam = new Mammal();
+        mam.walk();
+        Dog d = new Dog();
+        d.bark();
+    }
+}
+"""
+*Shape*
+import java.util.Scanner;
+class Shape {
+    void area() {
+        System.out.println("Area not Defined");
+    }
+}
+class Circle extends Shape {
+    void area() {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Radius: ");
+        int Radius=sc.nextInt();
+        double area=3.14 * Radius * Radius;
+        System.out.println("Area: "+area);
+    }
+}
+class Rectangle extends Shape {
+    void area() {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the length: ");
+        int l=sc.nextInt();
+        System.out.println("Enter the width: ");
+        int w=sc.nextInt();
+        int area=l*w;
+        System.out.println("Area: "+area);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Circle circle=new Circle();
+        circle.area();
+        Rectangle rectangle=new Rectangle();
+        rectangle.area();
+    }
+}
+"""
+*Super Keyword*
+import java.util.Scanner;
+class Person {
+    Person() {
+        System.out.println("Person Created");
+    }
+}
+class Student extends Person {
+    Student() {
+        super();
+        System.out.println("Student Created");
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Student student=new Student();
+    }
+}
+"""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
